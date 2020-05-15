@@ -28,3 +28,4 @@ select * from employees where job_id in ('AC_MGR',' AD_VP', 'FI_MGR', 'HR_REP','
 ----10
 select * from employees where job_id not in ('AC_MGR',' AD_VP', 'FI_MGR', 'HR_REP','PR_REP');
 ----11
+select employee_id,last_name,salary,department_id from employees where manager_id=&manager_id;
