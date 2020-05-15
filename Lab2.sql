@@ -21,4 +21,10 @@ order by e.last_name ;
 select e.first_name||' '||e.last_name as "Full Name",'Phone: '||e.phone_number||' Email: '||e.email as "Contant Details",e.hire_date
 from employees e
 order by hire_date desc;
-
+----8
+select * from employees where lower(first_name) like 's%n';
+----9
+select * from employees where job_id in ('AC_MGR',' AD_VP', 'FI_MGR', 'HR_REP','PR_REP');
+----10
+select * from employees where job_id not in ('AC_MGR',' AD_VP', 'FI_MGR', 'HR_REP','PR_REP');
+----11
