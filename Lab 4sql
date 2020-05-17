@@ -1,7 +1,3 @@
-select * from employees;
-select * from departments;
-select * from locations;
-select * from countries;
 ----1
 select concat(concat(last_name,', '),first_name) as "Full name", concat(email,'@megacorp.com') from employees;
 ----2
